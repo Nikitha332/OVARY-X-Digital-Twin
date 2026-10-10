@@ -1,0 +1,22 @@
+
+flowchart TD
+    A["Synthetic EHR Demo Data<br/>Patient profile CSV"]
+    B["Synthetic Wearable Demo Data<br/>Time-series CSV"]
+    C["Schema Validation<br/>IDs, columns, timestamps, labels"]
+    D["Data Fusion<br/>Patient-level summaries"]
+    E["Reference Baseline<br/>Earliest available reading"]
+    F["What-if Scenario Engine<br/>Illustrative input changes"]
+    G["Processed Demo Outputs<br/>Fused, baseline and scenario CSVs"]
+    H["Streamlit Dashboard<br/>Profiles, trends and comparisons"]
+    I["Data Quality and Limitations<br/>Synthetic data; no clinical validation"]
+
+    A --> C
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    D --> G
+    E --> G
+    F --> G
+    G --> H
+    H --> I

@@ -1,0 +1,3 @@
+patient_id,age,bmi,pcos_status,data_type
+SYN001,24,27.1,synthetic_example,SYNTHETIC
+SYN002,29,31.4,synthetic_example,SYNTHETIC
